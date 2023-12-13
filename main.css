@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100%;
+}
+
+
+.nav{
+    height: 60vh; /* Sets the viewport height to 60% */
+    background-image: url(Images/HerosectionbgImage.jpg); /* The Background Image */
+    background-position: center; /* Positioned the background image at the center */
+    background-repeat: no-repeat; /* Prevents background image from repeating */
+    background-size: cover; /* Scales background image to cover entire area */
+    padding: 30px; /* Adds padding around the content */
+   
+}
+
+
+.nav .navbar {
+    /* set the margin below navbar */
+    margin-bottom: 24px;
+}
+
+
+.nav .navbar ul {
+    /* flex container setup */
+    display: flex;
+    flex-direction: row;
+
+    /* space items equally */
+    justify-content: space-between;
+
+    /* center items vertically */
+    align-items: center;
+}
+
+
+.nav .navbar ul li{
+    /* Removes list style type */
+    list-style-type: none;
+}
+
+
+
+.nav .navbar ul li a{
+    /* Unset underline */
+    text-decoration: none;
+
+    /* White text color */
+    color: white;
+
+    /* Set font size and family */
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.nav .navbar ul li button{
+    /* Background color */
+    background-color: #EF3B6Aed;
+
+    /* Text color */
+    color: white;
+
+    /* Font */
+    font-family: sans-serif;
+    font-weight:200;
+
+    /* Padding */
+    padding: 6px 24px;
+
+    /* Border radius */
+    border-radius: 15px;
+
+    /* Remove border */
+    border: none;
+
+    /* Margin right */
+    margin-right: 10px;
+    margin-top: 10px;
+
+    /* Cursor style */
+    cursor: pointer;
+
+}
+
+
+
+
+.navText {
+    /* center the text */
+    margin: auto;
+    /* set the text width */
+    width: 38%;
+    /* set the text color */
+    color: white;
+}
+
+
+
+.navText h1{
+    /* font family: Segoe UI */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* bottom margin: 5px */
+    margin-bottom: 5px;
+
+    /* font size: 50px */
+    font-size: 40px;
+}
+
+
+
+.navText p{
+    /*Set line height for easy readability*/
+    line-height: 2.0;
+    /*Set margin bottom for spacing*/
+    margin-bottom: 20px;
+    margin-top: 12px;
+    font-size: 13.5px;
+    /*Set font family for styling*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/* Navigation button style */
+.navText button{
+    /* Set button padding */
+    padding: 10px 28px;
+
+    /* Set button text color */
+    color: white;
+
+    /* Set button background color */
+    background-color: #479DCC;
+
+    /* Remove button border */
+    border: none;
+
+    /* Set button border radius */
+    border-radius: 25px;
+
+    /* Set button font */
+    font-family: sans-serif;
+
+    /* Set button font weight */
+    font-weight:300;
+
+    /* Set button cursor to pointer */
+    cursor: pointer;
+}
+
+.navText button:hover{
+    background-color: #479DCC;
+    /* change text color to white */
+    color: white;
+    /* remove the borders while hovering on the buttons */
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  button {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+
+  button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: left 0.3s ease;
+  }
+
+  button:hover::before {
+    left: 0;
+  
+}
+
+/* Padding & height for gallery */
+.gallery{
+    padding: 30px; /* Apply 10px padding around gallery */
+    height: 80vh; /* Set gallery height to 80% of viewport height */
+}
+
+
+
+.gallery h2{
+    /* center-aligned heading */
+    text-align: center;
+
+    /* use a different font */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    /* larger font size */
+    font-size: 36px;
+}
+
+
+
+/* Navigation Button Style */
+.gallery .navButton{
+    margin: auto;                      /* Centers button */
+    width: 38%;                         /* Button width */
+    padding: 10px;                      /* Padding inside button */
+    display: flex;                      /* Flexbox for spacing */
+    justify-content: space-around;      /* Evenly distribute spacing */
+    margin-top: 26px;                   /* Top margin */
+    margin-bottom: 15px;                /* Bottom margin */
+}
+
+
+
+.gallery .navButton button{
+    /* pointer cursor for button */
+    cursor: pointer;
+
+    /* button padding and size */
+    padding: 7px 26px;
+
+    /* button border radius and border */
+    border-radius: 25px;
+    border: 1px solid #868686;
+
+    /* button background color and text color */
+    background-color: transparent;
+    color: #000;
+
+    /* button font */
+    font-family: sans-serif;
+    font-weight:300;
+}
+
+.nav .navbar ul li button:hover{
+    /* change button colour on hover */
+    background-color: rgb(230, 6, 6);
+
+    /* change text colour on hover */
+    color: white;
+
+button {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #EF3B6Aed;
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+
+  button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: right 0.01s ease;
+  }
+
+  button:hover::before {
+    right: 0;
+  
+}
+}
+
+.gallery .navButton button:hover{
+    /* on button hover, change bg color */
+    background-color: #479DCC;
+    /* also change text color to white */
+    color: white;
+    /* remove the borders while hovering on the buttons */
+    border: none;
+}
+
+
+.gallery .navButton button:first-child{
+    /* First button background color */
+    background-color: #479DCC;
+
+    /* First button text color */
+    color: white;
+}
+
+
+
+.gallery .gallerypictures {
+    /* set gallery picture width */
+    width: 50%;
+
+    /* center gallery picture */
+    margin: auto;
+
+    /* set gallery picture height */
+    height: 37vh;
+
+    /* create grid for gallery picture */
+    display: grid;
+
+    /* set grid columns for gallery picture */
+    grid-template-columns: repeat(4, 1fr);
+
+    /* set row gap for gallery picture */
+    row-gap: 15px;
+
+    /* set column gap for gallery picture */
+    column-gap: 15px;
+}
+
+
+
+/* Define image class */
+.image1 {
+    /* Set image source */
+    background-image: url(Images/3.jpg);
+    /* Fill container with image */
+    background-size: cover;
+    /* Disable image repetition */
+    background-repeat: no-repeat;
+    /* Center image within container */
+    background-position: center;
+    /* Border radius */
+    border-radius: 4px;
+}
+
+
+
+/* Define image 2 style */
+.image2 {
+    /* Set background image from file */
+    background-image: url(Images/2.jpg);
+    /* Adjust background size to fit container */
+    background-size: cover;
+    /* Prevent background image repetition */
+    background-repeat: no-repeat;
+    /* Align background image to center */
+    background-position: center;
+    /* Set container height */
+    height: 92%;
+    /* Border radius */
+    border-radius: 4px;
+}
+
+
+.image3{
+    background-image: url(Images/4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+}
+.image4{
+    background-image: url(Images/6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Border radius */
+    border-radius: 4px;
+}
+.image5{
+    background-image: url(Images/5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Border radius */
+    border-radius: 4px;
+}
+.image6{
+    background-image: url(Images/8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85%;
+    position: relative;
+    top: -5px;
+    border-radius: 4px;
+}
+.image7{
+    background-image: url(Images/10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85%;
+    border-radius: 4px;
+}
+.image8{
+    background-image: url(Images/7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85%;
+    border-radius: 4px;
+}
